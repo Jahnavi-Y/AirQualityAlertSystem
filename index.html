@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Alert System</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Air Quality Alert System</h1>
+            <p>Check the air quality in your location and stay safe!</p>
+        </div>
+
+        <button id="getLocationBtn" class="btn">Check Air Quality</button>
+
+        <div id="airQualityInfo" class="info hidden">
+            <p><strong>Location:</strong> <span id="location">Fetching...</span></p>
+            <p><strong>Air Quality Index (AQI):</strong> <span id="aqi">-</span></p>
+            <p id="alert" class="alert hidden">⚠️ Alert: Poor Air Quality!</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Air Quality Monitoring</p>
+        </footer>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
